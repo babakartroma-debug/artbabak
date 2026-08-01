@@ -23,7 +23,7 @@
 					<h2>Painting Gallery</h2>
 					<p>Explore oil, acrylic, and mixed media works.</p>
 					
-					<div class="row">
+					<div class="row" id="gallery">
 						<!-- 1-ci Əsər -->
 						<article class="col-6 col-12-xsmall work-item">
 							<a href="images/fulls/01_ana.jpg" class="image fit thumb"><img src="images/thumbs/01_ana.jpg" alt="Mother" /></a>
@@ -79,6 +79,20 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<!-- Xüsusi Slayd (Poptrox) Konfiqurasiyası -->
+			<script>
+				$(function() {
+					$('#gallery').poptrox({
+						usePopupCaption: true,
+						usePopupNav: true,
+						popupCloser: true,
+						popupLoaderText: '',
+						windowMargin: 50,
+						usePopupDefaultStyling: false
+					});
+				});
+			</script>
 
 	</body>
 </html>
